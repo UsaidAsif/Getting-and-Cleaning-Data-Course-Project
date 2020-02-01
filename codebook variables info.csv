@@ -1,0 +1,82 @@
+Variable Name,Class,Units,Description
+ Subject ID, integer,None,"The ID indicates specific individual who performed the prescribed activity, its value ranges form 1 to 30 since there were 30 individuals in the analysis."
+ Activity Name, factor,None,"The specific activity name which was performed by the individual and whose data was recorded in the analysis, there are a total of 6 activities which were performed by the various individuals, namely ""walking"", ""walking upstairs"", ""walking downstairs"", ""sitting"", ""standing"", ""laying""."
+ TimeBodyAcc.mean.X, numeric,m/s^2,The mean value obtained for all the 128 signals in the X axis.
+ TimeBodyAcc.mean.Y, numeric,m/s^2,The mean value obtained for all the 128 signals in the Y axis.
+ TimeBodyAcc.mean.Z, numeric,m/s^2,The mean value obtained for all the 128 signals in the Z axis.
+ TimeBodyAcc.std.X, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the X axis.
+ TimeBodyAcc.std.Y, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the Y axis.
+ TimeBodyAcc.std.Z, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the Z axis.
+ TimeGravityAcc.mean.X, numeric,m/s^2,The mean value obtained for all the 128 signals in the X axis.
+ TimeGravityAcc.mean.Y, numeric,m/s^2,The mean value obtained for all the 128 signals in the Y axis.
+ TimeGravityAcc.mean.Z, numeric,m/s^2,The mean value obtained for all the 128 signals in the Z axis.
+ TimeGravityAcc.std.X, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the X axis.
+ TimeGravityAcc.std.Y, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the Y axis.
+ TimeGravityAcc.std.Z, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the Z axis.
+ TimeBodyAccJerk.mean.X, numeric,m/s^2,The mean value obtained for all the 128 signals in the X axis.
+ TimeBodyAccJerk.mean.Y, numeric,m/s^2,The mean value obtained for all the 128 signals in the Y axis.
+ TimeBodyAccJerk.mean.Z, numeric,m/s^2,The mean value obtained for all the 128 signals in the Z axis.
+ TimeBodyAccJerk.std.X, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the X axis.
+ TimeBodyAccJerk.std.Y, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the Y axis.
+ TimeBodyAccJerk.std.Z, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the Z axis.
+ TimeBodyGyro.mean.X, numeric,m/s^2,The mean value obtained for all the 128 signals in the X axis.
+ TimeBodyGyro.mean.Y, numeric,m/s^2,The mean value obtained for all the 128 signals in the Y axis.
+ TimeBodyGyro.mean.Z, numeric,m/s^2,The mean value obtained for all the 128 signals in the Z axis.
+ TimeBodyGyro.std.X, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the X axis.
+ TimeBodyGyro.std.Y, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the Y axis.
+ TimeBodyGyro.std.Z, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the Z axis.
+ TimeBodyGyroJerk.mean.X, numeric,m/s^2,The mean value obtained for all the 128 signals in the X axis.
+ TimeBodyGyroJerk.mean.Y, numeric,m/s^2,The mean value obtained for all the 128 signals in the Y axis.
+ TimeBodyGyroJerk.mean.Z, numeric,m/s^2,The mean value obtained for all the 128 signals in the Z axis.
+ TimeBodyGyroJerk.std.X, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the X axis.
+ TimeBodyGyroJerk.std.Y, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the Y axis.
+ TimeBodyGyroJerk.std.Z, numeric,m/s^2,The standard deviation obtained for all the 128 signals in the Z axis.
+ TimeBodyAccMag.mean, numeric,m/s^2,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ TimeBodyAccMag.std, numeric,m/s^2,The standard deviation obtained after calculating the euclidean norm of all the signals in each of the axis (standard deviation of the 3 euclidean norms).
+ TimeGravityAccMag.mean, numeric,m/s^2,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ TimeGravityAccMag.std, numeric,m/s^2,The standard deviation obtained after calculating the euclidean norm of all the signals in each of the axis (standard deviation of the 3 euclidean norms).
+ TimeBodyAccJerkMag.mean, numeric,m/s^2,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ TimeBodyAccJerkMag.std, numeric,m/s^2,The standard deviation obtained after calculating the euclidean norm of all the signals in each of the axis (standard deviation of the 3 euclidean norms).
+ TimeBodyGyroMag.mean, numeric,m/s^2,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ TimeBodyGyroMag.std, numeric,m/s^2,The standard deviation obtained after calculating the euclidean norm of all the signals in each of the axis (standard deviation of the 3 euclidean norms).
+ TimeBodyGyroJerkMag.mean, numeric,m/s^2,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ TimeBodyGyroJerkMag.std, numeric,m/s^2,The standard deviation obtained after calculating the euclidean norm of all the signals in each of the axis (standard deviation of the 3 euclidean norms).
+ FreqBodyAcc.mean.X, numeric,Hz,The mean value obtained for all the 128 signals in the X axis.
+ FreqBodyAcc.mean.Y, numeric,Hz,The mean value obtained for all the 128 signals in the Y axis.
+ FreqBodyAcc.mean.Z, numeric,Hz,The mean value obtained for all the 128 signals in the Z axis.
+ FreqBodyAcc.std.X, numeric,Hz,The standard deviation obtained for all the 128 signals in the X axis.
+ FreqBodyAcc.std.Y, numeric,Hz,The standard deviation obtained for all the 128 signals in the Y axis.
+ FreqBodyAcc.std.Z, numeric,Hz,The standard deviation obtained for all the 128 signals in the Z axis.
+ FreqBodyAcc.meanFreq.X, numeric,Hz,The mean value obtained for all the 128 signals in the X axis.
+ FreqBodyAcc.meanFreq.Y, numeric,Hz,The mean value obtained for all the 128 signals in the Y axis.
+ FreqBodyAcc.meanFreq.Z, numeric,Hz,The mean value obtained for all the 128 signals in the Z axis.
+ FreqBodyAccJerk.mean.X, numeric,Hz,The mean value obtained for all the 128 signals in the X axis.
+ FreqBodyAccJerk.mean.Y, numeric,Hz,The mean value obtained for all the 128 signals in the Y axis.
+ FreqBodyAccJerk.mean.Z, numeric,Hz,The mean value obtained for all the 128 signals in the Z axis.
+ FreqBodyAccJerk.std.X, numeric,Hz,The standard deviation obtained for all the 128 signals in the X axis.
+ FreqBodyAccJerk.std.Y, numeric,Hz,The standard deviation obtained for all the 128 signals in the Y axis.
+ FreqBodyAccJerk.std.Z, numeric,Hz,The standard deviation obtained for all the 128 signals in the Z axis.
+ FreqBodyAccJerk.meanFreq.X, numeric,Hz,The mean value obtained for all the 128 signals in the X axis.
+ FreqBodyAccJerk.meanFreq.Y, numeric,Hz,The mean value obtained for all the 128 signals in the Y axis.
+ FreqBodyAccJerk.meanFreq.Z, numeric,Hz,The mean value obtained for all the 128 signals in the Z axis.
+ FreqBodyGyro.mean.X, numeric,Hz,The mean value obtained for all the 128 signals in the X axis.
+ FreqBodyGyro.mean.Y, numeric,Hz,The mean value obtained for all the 128 signals in the Y axis.
+ FreqBodyGyro.mean.Z, numeric,Hz,The mean value obtained for all the 128 signals in the Z axis.
+ FreqBodyGyro.std.X, numeric,Hz,The standard deviation obtained for all the 128 signals in the X axis.
+ FreqBodyGyro.std.Y, numeric,Hz,The standard deviation obtained for all the 128 signals in the Y axis.
+ FreqBodyGyro.std.Z, numeric,Hz,The standard deviation obtained for all the 128 signals in the Z axis.
+ FreqBodyGyro.meanFreq.X, numeric,Hz,The mean value obtained for all the 128 signals in the X axis.
+ FreqBodyGyro.meanFreq.Y, numeric,Hz,The mean value obtained for all the 128 signals in the Y axis.
+ FreqBodyGyro.meanFreq.Z, numeric,Hz,The mean value obtained for all the 128 signals in the Z axis.
+ FreqBodyAccMag.mean, numeric,Hz,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ FreqBodyAccMag.std, numeric,Hz,The standard deviation obtained after calculating the euclidean norm of all the signals in each of the axis (standard deviation of the 3 euclidean norms).
+ FreqBodyAccMag.meanFreq, numeric,Hz,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ FreqBodyBodyAccJerkMag.mean, numeric,Hz,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ FreqBodyBodyAccJerkMag.std, numeric,Hz,The standard deviation obtained after calculating the euclidean norm of all the signals in each of the axis (standard deviation of the 3 euclidean norms).
+ FreqBodyBodyAccJerkMag.meanFreq, numeric,Hz,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ FreqBodyBodyGyroMag.mean, numeric,Hz,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ FreqBodyBodyGyroMag.std, numeric,Hz,The standard deviation obtained after calculating the euclidean norm of all the signals in each of the axis (standard deviation of the 3 euclidean norms).
+ FreqBodyBodyGyroMag.meanFreq, numeric,Hz,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ FreqBodyBodyGyroJerkMag.mean, numeric,Hz,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).
+ FreqBodyBodyGyroJerkMag.std, numeric,Hz,The standard deviation obtained after calculating the euclidean norm of all the signals in each of the axis (standard deviation of the 3 euclidean norms).
+ FreqBodyBodyGyroJerkMag.meanFreq, numeric,Hz,The mean value obtained after calculating the euclidean norm of all the signals in each of the axis (mean of the 3 euclidean norms).

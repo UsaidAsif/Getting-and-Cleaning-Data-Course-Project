@@ -1,0 +1,51 @@
+---
+title: "Codebook"
+author: "Usaid Asif Shamsi"
+date: "1/27/2020"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+````{}
+# This is the .Rmd file, please see the .md file of the codebook to see the rendered version on github.
+````
+
+## Introduction
+This is the codebook markdown file providing various details of the project and was made using the guidelines provided in the Getting and Cleaning Data course project of the Data Science Specialization.
+
+## Data Collection and Processing
+
+### Collection of the raw data
+The dataset to be used in the project was taken from the link https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip, and it was unzipped to access the required files. For the purposes of the project, only the files named "activity_labels.txt", "features.txt", "features_info.txt", "subject_test.txt", "X_test.txt", y_test.txt", "subject_train.txt", "X_train.txt", y_train.txt" were used. 
+
+## Detailed Steps to Create the Tidy Dataset
+1. First the data was read using the read.table command. This resulted in all the relevant data frames to be used in further analysis.
+2. Since we weere required to merge the training and test sets so using the rbind command, the relevant fata frames were merged. 
+3. Next we needed only the measurements on all the mean and std variables, hence using the grep command the regex pattern "mean()" and "std()" were used on the second column of the "features.txt" file to grab all the columns/features containing the mean and std code words. 
+4. The sort command was used to combine all the mean and std column names in an ascending manner.
+5. Next we took the data frame created in step 2, and grabbed from it all the columns (along with all of its rows) that were sorted in ascending order in step 4. This resulted in all the required columns for the project.
+6. Both the subjects' file and the ys' file were merged together, in each of their own separate files.
+7. The command cbind was used to combine the files created in 6th step with the data frame of the 5th step. This resulted in additional required columns/features for the project.
+8. To replace the activity numbers with the activity names, the match command was used. All of the relevant matches from the 2nd column of the data frame of the 7th step in the "activity_labels" data frame's first column were passed to the "activity_labels" data frame's to extract the relevant activity name, and thus this new column was used to replace the old 2nd column of the 7th step data frame.
+9. Next to clean and thus for appropriate naming of all the features of our data frame, first the features data frame's 2nd column was converted to character (to avoid potential problems with working on factors) and then a series of gsub commands were used to have cleaner names of the features.
+10. Next we picked all the columns which had mean() or std() in their names from the data frame of the 9th step and then passed their new names to our data frame. Thus now our data frame had appropriate names (the 1st and 2nd column was also renamed to "Subject ID" and "Activity Name").
+11. To create our final data frame, and to do step 5 of the course project, the data frame was grouped by "Subject ID", and "Activity Name" and then used the summarize_all command, passing in the grouped data frame and the mean function. This excluded the grouped variables so mean function was not applied to the "Subject ID" and "Activity Name" columns but on all of the other columns. This gives our average of each variable for each activity and each subject. This resulted in the tidy set required in the project.
+
+## Information on the Variables 
+* Abbreviations used in analysis:
+
+Acc: Acceleration, Std: Standard Deviation, Gyro: Gyroscope, Mag: Magnitude, Freq: Frequency.
+
+* All variables which have "Time" as a prefix means that they indicate the time domain signals whereas all variables which have "Freq" as a prefix indicate that they are in the frequency domain obtained by applying the Fast Fourier Transform to the signals.
+* All variables which contains "Body" in their names indicates that the signal represents the body component of the specific acceleration measurements for the specified individual and the specific activity and variables which contains "gravity" indicates it represents the gravity component of the specific acceleration measurements for the specified individual and the specific activity.
+* All variables which contains "Acc" indicates that the signals had come from the accelerometer and those which contain "Gyro" indicates that the signals had come from the gyroscope.
+* Variables which contains "jerk" indicates that the body linear acceleration and angular velocity were derived in time to obtain these Jerk signals for the specified individual and the specific activity.
+* Variables which contains "Mag" in their names represents that those values were obtained after calculating the Euclidean norm of the signals.
+```{r echo=T}
+df4 <- read.csv("codebook variables info.csv", check.names = F)
+#print(df4)
+knitr::kable(df4)
+```
